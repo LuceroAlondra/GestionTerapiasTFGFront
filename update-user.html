@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css"> <!-- Estilos del dashboard -->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block sidebar" style="background-color: #44b4b4; color: white;">
+                <div class="sidebar-sticky">
+                    <!-- Imagen de perfil -->
+                    <img src="sinperfil.jpg" alt="Imagen de perfil" class="profile-image">
+                    <!-- Opciones del menú lateral -->
+                    <a href="dashboard.html">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                              </svg>
+                            Volver a Dashboard
+                        </h6>
+                    </a>
+                    
+                    <!-- Botón para cerrar sesión -->
+                    <div class="sidebar-footer">
+                        <a href="login.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                                <path d="M7.5 1v7h1V1z"/>
+                                <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"/>
+                            </svg>
+                            Cerrar Sesión
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Contenido principal -->
+            <div class="col-md-10 main-content d-flex flex-column">
+                <!-- Encabezado -->
+                <header class="text-center mb-4">
+                    <div class="container-border">
+                        <h1>Editar Perfil</h1>
+                        <img src="logo.jpg" alt="logo" class="logo-image">
+                    </div>
+                </header>
+                <!-- Formulario de edición de perfil -->
+                <div class="container-border">
+                    <form id="editProfileForm">
+                        <div class="form-group">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Número de Teléfono</label>
+                            <input type="tel" id="phoneNumber" class="form-control" required>
+                        </div>                        
+                        <button type="button" class="btn btn-warning" id="save-edit-button">Guardar Cambios</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tu script para manejar la actualización de perfil -->
+    <script src="update-user.js"></script> 
+
+</html>
+
+
+
+
